@@ -1,0 +1,61 @@
+object ConfigEdForm: TConfigEdForm
+  Left = 0
+  Top = 0
+  BorderStyle = bsSingle
+  Caption = 'Configura'#231#227'o - Banco de Dados'
+  ClientHeight = 121
+  ClientWidth = 328
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnClose = FormClose
+  PixelsPerInch = 96
+  TextHeight = 13
+  object LabelDiretorio: TLabel
+    Left = 15
+    Top = 16
+    Width = 168
+    Height = 13
+    Caption = 'Informe o local do  banco de dados'
+  end
+  object BitBtn1: TBitBtn
+    Left = 208
+    Top = 59
+    Width = 94
+    Height = 25
+    Caption = 'Configurar'
+    Glyph.Data = {
+      76010000424D7601000000000000760000002800000020000000100000000100
+      04000000000000010000120B0000120B00001000000000000000000000000000
+      800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00555555555555
+      555555555555555555555555555555555555555555FF55555555555559055555
+      55555555577FF5555555555599905555555555557777F5555555555599905555
+      555555557777FF5555555559999905555555555777777F555555559999990555
+      5555557777777FF5555557990599905555555777757777F55555790555599055
+      55557775555777FF5555555555599905555555555557777F5555555555559905
+      555555555555777FF5555555555559905555555555555777FF55555555555579
+      05555555555555777FF5555555555557905555555555555777FF555555555555
+      5990555555555555577755555555555555555555555555555555}
+    NumGlyphs = 2
+    TabOrder = 0
+    OnClick = BitBtn1Click
+  end
+  object EditDiretorio: TEdit
+    Left = 15
+    Top = 32
+    Width = 287
+    Height = 21
+    TabOrder = 1
+  end
+  object OpenDiretorio: TOpenDialog
+    Filter = 'FireBird|*.fdb'
+    Left = 120
+    Top = 40
+  end
+end

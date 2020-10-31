@@ -1,0 +1,760 @@
+inherited VendaPrForm: TVendaPrForm
+  Caption = 'Movimento - Abastecimento (Venda)'
+  ClientHeight = 380
+  ClientWidth = 577
+  ExplicitWidth = 583
+  ExplicitHeight = 409
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited pgcPrincipal: TPageControl
+    Width = 577
+    Height = 339
+    ExplicitWidth = 577
+    ExplicitHeight = 339
+    inherited tbPesq: TTabSheet
+      ExplicitWidth = 569
+      ExplicitHeight = 311
+      inherited pnlBtnsPesq: TPanel
+        Top = 270
+        Width = 569
+        ExplicitTop = 270
+        ExplicitWidth = 569
+        inherited btnNovo: TBitBtn
+          Left = 328
+          ExplicitLeft = 328
+        end
+        inherited btnDetalhar: TBitBtn
+          Left = 409
+          ExplicitLeft = 409
+        end
+        inherited btnExcluir: TBitBtn
+          Left = 490
+          ExplicitLeft = 490
+        end
+      end
+      inherited DBGrid1: TDBGrid
+        Width = 563
+        Height = 239
+      end
+      inherited pnlTopo: TPanel
+        Width = 569
+        ExplicitWidth = 569
+      end
+    end
+    inherited tbDados: TTabSheet
+      ExplicitWidth = 569
+      ExplicitHeight = 311
+      inherited pnlBtnsDados: TPanel
+        Top = 271
+        Width = 569
+        Height = 40
+        TabOrder = 3
+        ExplicitTop = 271
+        ExplicitWidth = 569
+        ExplicitHeight = 40
+        DesignSize = (
+          569
+          40)
+        inherited btnListar: TBitBtn [0]
+          Left = 255
+          Height = 23
+          ExplicitLeft = 255
+          ExplicitHeight = 23
+        end
+        inherited btnAlterar: TBitBtn [1]
+          Left = 333
+          Height = 23
+          ExplicitLeft = 333
+          ExplicitHeight = 23
+        end
+        inherited btnCancelar: TBitBtn [2]
+          Left = 490
+          Height = 23
+          ExplicitLeft = 490
+          ExplicitHeight = 23
+        end
+        inherited btnGravar: TBitBtn [3]
+          Left = 411
+          Height = 23
+          ExplicitLeft = 411
+          ExplicitHeight = 23
+        end
+      end
+      inherited pnlDados: TPanel
+        Top = 225
+        Width = 569
+        Height = 46
+        TabOrder = 4
+      end
+      object boxProduto: TGroupBox
+        Left = 0
+        Top = 73
+        Width = 569
+        Height = 72
+        Align = alTop
+        Caption = 'Produto'
+        TabOrder = 1
+        object Label6: TLabel
+          Left = 107
+          Top = 19
+          Width = 32
+          Height = 13
+          Caption = 'Bomba'
+        end
+        object btnPesqBomba: TSpeedButton
+          Left = 166
+          Top = 35
+          Width = 28
+          Height = 24
+          Glyph.Data = {
+            36060000424D3606000000000000360000002800000020000000100000000100
+            1800000000000006000000000000000000000000000000000000FFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1F4F993A8
+            CBF9FAFCFFFFFFFFFFFFFFFFFFFEFEFEFFFFFFFFFFFFFDFDFDFEFEFEFFFFFFFE
+            FEFEFFFFFFFEFEFEFDFDFDFFFFFFA7A7A7FBFBFBFFFFFFFBFBFBFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB6C6E0325BA4477F
+            B84A72B2EFF2F8FFFFFFFAFAFAFFFFFFFDFDFDFEFEFEFFFFFFFFFFFFF4F4F4FF
+            FFFFFDFDFDFFFFFFCDCDCD656565919191808080F2F2F2FFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB7C8E15083BB7CB4D67EB4
+            D55590C24471B0F5F7FBFFFFFFFFFFFFFFFFFFFEFEFEFBFBFBFFFFFFFCFCFCFF
+            FFFFFAFAFAD3D3D3909090B5B5B5BBBBBB999999808080F6F6F6FFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB8CAE2578DC08EC4DE9FD2E692C6
+            DF609AC8456097F7F9FBFFFFFFF8F8F8FFFFFFFFFFFFFFFFFFF7F7F7FFFFFFFF
+            FFFFD5D5D5909090C1C1C1D6D6D6C1C1C1A6A6A6696969FBFBFBFFFFFFFFFFFF
+            D8E4F082ABD0598FC04C86BD4B84BC5185BA4B80BA86BEDAA2D4E7A4D6E87FBA
+            D93E64ABEDF1F7FFFFFFFCFCFCFFFFFFDCDCDCB1B1B198989894949491919189
+            8989898989C3C3C3D3D3D3D8D8D8C0C0C0707070F3F3F3FFFFFFFFFFFFB8D1E6
+            6099C76EA0CAA6C3DEE2EBF4E2EAF4A4BEDC528CC078B3D598CBE28CC3DD4E82
+            BBEDF1F7FFFFFFFFFFFFFDFDFDD6D6D6A5A5A5B0B0B0C3C3C3EFEFEFE9E9E9CA
+            CACA929292B2B2B2CDCDCDC9C9C9878787F5F5F5FBFBFBFBFBFBD9E7F2649EC9
+            A2C4DEFDFBF9FCF7F3FBF5EEFBF5EFFCF8F3FEFCFA5793C36EAAD13F72BDBBCC
+            E3FFFFFFFFFFFFFFFFFFE5E5E5A6A6A6C3C3C3F6F6F6F6F6F6F3F3F3F3F3F3F6
+            F6F6FFFFFF9C9C9CB1B1B1818181D1D1D1FFFFFFFFFFFFFFFFFF8AB8D775A9D0
+            FDFBF9FBF5EEFAF3ECFAF3ECFAF4ECFAF4EDFBF6F0FEFCFA4E84BA6A95C5FFFF
+            FFFFFFFFFFFFFFFFFFFFBCBCBCB1B1B1FFFFFFF3F3F3F7F7F7F0F0F0F2F2F2F4
+            F4F4F5F5F5FBFBFB8D8D8DA1A1A1FFFFFFFFFFFFFCFCFCFFFFFF67A6CCABCCE3
+            FBF7F1FAF2EAFAF3EBFAF3EBFAF3ECFAF3ECFAF4EDFCF8F3A4BEDC5588BDFFFF
+            FFFFFFFFFFFFFFFFFFFFA9A9A9D1D1D1F6F6F6F2F2F2F2F2F2F0F0F0F2F2F2F1
+            F1F1FAFAFAF5F5F5C1C1C1949494FCFCFCFEFEFEFFFFFFFEFEFE61A5CCE4EFF6
+            FAF3EBF9F2EAF9F2EAFAF2EAFAF3EBFAF3EBFAF3ECFBF5EEE2EBF44C86BDFFFF
+            FFFFFFFFFFFFFFFFFFFFAAAAAAF0F0F0EDEDEDF1F1F1EDEDEDF1F1F1F6F6F6F3
+            F3F3E7E7E7F8F8F8F1F1F1929292FFFFFFFEFEFEFDFDFDFFFFFF62A7CEE4EFF6
+            FAF2EAF9F1E9F9F2E9F9F2EAF9F2EAFAF3EBFAF3EBFAF4EEE2EBF44F8ABEFFFF
+            FFFFFFFFFFFFFFFFFFFFA7A7A7F5F5F5F2F2F2F2F2F2F0F0F0EEEEEEEFEFEFEE
+            EEEEF6F6F6F5F5F5EBEBEB8F8F8FFFFFFFFFFFFFFFFFFFFCFCFC6CACD1AED0E6
+            FBF5EFF9F1E8F9F1E8F9F1E9F9F2E9F9F2EAFAF3EBFCF7F2A7C4DE5A91C2FFFF
+            FFFFFFFFFFFFFFFFFFFFB3B3B3D1D1D1F4F4F4E8E8E8F1F1F1F0F0F0EBEBEBF2
+            F2F2F0F0F0F4F4F4C2C2C2A1A1A1FCFCFCFCFCFCFFFFFFFDFDFD90C1DC7CB5D6
+            FDFAF7FAF3EBF9F1E8F9F1E8F9F1E9F9F2E9FAF4EEFDFBF970A3CC83ADD1FFFF
+            FFFFFFFFFFFFFFFFFFFFC0C0C0BDBDBDFDFDFDF1F1F1EEEEEEF2F2F2F2F2F2EF
+            EFEFFDFDFDF8F8F8A7A7A7B6B6B6FFFFFFFFFFFFFFFFFFFFFFFFDCECF46FAFD3
+            A8CFE4FDFAF7FBF5EFF9F2EAF9F2EAFBF6F0FDFBF8A3C5DF629AC8D8E5F1FFFF
+            FFFFFFFFFFFFFFFFFFFFEEEEEEB0B0B0CACACAFBFBFBFBFBFBE9E9E9EFEFEFF5
+            F5F5F3F3F3C5C5C5A8A8A8E1E1E1FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFBEDCEB
+            6FAFD37CB6D7AED1E6E4EFF6E4EFF6ACCDE476ADD166A0CBB9D3E6FFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFDADADAB6B6B6C0C0C0CECECEEFEFEFF0F0F0D4
+            D4D4B7B7B7A8A8A8D0D0D0FFFFFFFFFFFFF7F7F7FFFFFFFFFFFFFFFFFFFFFFFF
+            DCECF490C2DD6CADD164A8CE62A6CD69A7CF8BBAD9DAE8F2FFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFEFEFEFFFFFFE5E5E5C2C2C2AEAEAEB0B0B0A8A8A8AA
+            AAAABABABAF0F0F0FEFEFEFEFEFEFDFDFDFFFFFFFFFFFFFEFEFE}
+          NumGlyphs = 2
+          OnClick = btnPesqBombaClick
+        end
+        object btnPesqCombustivel: TSpeedButton
+          Left = 259
+          Top = 35
+          Width = 28
+          Height = 24
+          Glyph.Data = {
+            36060000424D3606000000000000360000002800000020000000100000000100
+            1800000000000006000000000000000000000000000000000000FFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1F4F993A8
+            CBF9FAFCFFFFFFFFFFFFFFFFFFFEFEFEFFFFFFFFFFFFFDFDFDFEFEFEFFFFFFFE
+            FEFEFFFFFFFEFEFEFDFDFDFFFFFFA7A7A7FBFBFBFFFFFFFBFBFBFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB6C6E0325BA4477F
+            B84A72B2EFF2F8FFFFFFFAFAFAFFFFFFFDFDFDFEFEFEFFFFFFFFFFFFF4F4F4FF
+            FFFFFDFDFDFFFFFFCDCDCD656565919191808080F2F2F2FFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB7C8E15083BB7CB4D67EB4
+            D55590C24471B0F5F7FBFFFFFFFFFFFFFFFFFFFEFEFEFBFBFBFFFFFFFCFCFCFF
+            FFFFFAFAFAD3D3D3909090B5B5B5BBBBBB999999808080F6F6F6FFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB8CAE2578DC08EC4DE9FD2E692C6
+            DF609AC8456097F7F9FBFFFFFFF8F8F8FFFFFFFFFFFFFFFFFFF7F7F7FFFFFFFF
+            FFFFD5D5D5909090C1C1C1D6D6D6C1C1C1A6A6A6696969FBFBFBFFFFFFFFFFFF
+            D8E4F082ABD0598FC04C86BD4B84BC5185BA4B80BA86BEDAA2D4E7A4D6E87FBA
+            D93E64ABEDF1F7FFFFFFFCFCFCFFFFFFDCDCDCB1B1B198989894949491919189
+            8989898989C3C3C3D3D3D3D8D8D8C0C0C0707070F3F3F3FFFFFFFFFFFFB8D1E6
+            6099C76EA0CAA6C3DEE2EBF4E2EAF4A4BEDC528CC078B3D598CBE28CC3DD4E82
+            BBEDF1F7FFFFFFFFFFFFFDFDFDD6D6D6A5A5A5B0B0B0C3C3C3EFEFEFE9E9E9CA
+            CACA929292B2B2B2CDCDCDC9C9C9878787F5F5F5FBFBFBFBFBFBD9E7F2649EC9
+            A2C4DEFDFBF9FCF7F3FBF5EEFBF5EFFCF8F3FEFCFA5793C36EAAD13F72BDBBCC
+            E3FFFFFFFFFFFFFFFFFFE5E5E5A6A6A6C3C3C3F6F6F6F6F6F6F3F3F3F3F3F3F6
+            F6F6FFFFFF9C9C9CB1B1B1818181D1D1D1FFFFFFFFFFFFFFFFFF8AB8D775A9D0
+            FDFBF9FBF5EEFAF3ECFAF3ECFAF4ECFAF4EDFBF6F0FEFCFA4E84BA6A95C5FFFF
+            FFFFFFFFFFFFFFFFFFFFBCBCBCB1B1B1FFFFFFF3F3F3F7F7F7F0F0F0F2F2F2F4
+            F4F4F5F5F5FBFBFB8D8D8DA1A1A1FFFFFFFFFFFFFCFCFCFFFFFF67A6CCABCCE3
+            FBF7F1FAF2EAFAF3EBFAF3EBFAF3ECFAF3ECFAF4EDFCF8F3A4BEDC5588BDFFFF
+            FFFFFFFFFFFFFFFFFFFFA9A9A9D1D1D1F6F6F6F2F2F2F2F2F2F0F0F0F2F2F2F1
+            F1F1FAFAFAF5F5F5C1C1C1949494FCFCFCFEFEFEFFFFFFFEFEFE61A5CCE4EFF6
+            FAF3EBF9F2EAF9F2EAFAF2EAFAF3EBFAF3EBFAF3ECFBF5EEE2EBF44C86BDFFFF
+            FFFFFFFFFFFFFFFFFFFFAAAAAAF0F0F0EDEDEDF1F1F1EDEDEDF1F1F1F6F6F6F3
+            F3F3E7E7E7F8F8F8F1F1F1929292FFFFFFFEFEFEFDFDFDFFFFFF62A7CEE4EFF6
+            FAF2EAF9F1E9F9F2E9F9F2EAF9F2EAFAF3EBFAF3EBFAF4EEE2EBF44F8ABEFFFF
+            FFFFFFFFFFFFFFFFFFFFA7A7A7F5F5F5F2F2F2F2F2F2F0F0F0EEEEEEEFEFEFEE
+            EEEEF6F6F6F5F5F5EBEBEB8F8F8FFFFFFFFFFFFFFFFFFFFCFCFC6CACD1AED0E6
+            FBF5EFF9F1E8F9F1E8F9F1E9F9F2E9F9F2EAFAF3EBFCF7F2A7C4DE5A91C2FFFF
+            FFFFFFFFFFFFFFFFFFFFB3B3B3D1D1D1F4F4F4E8E8E8F1F1F1F0F0F0EBEBEBF2
+            F2F2F0F0F0F4F4F4C2C2C2A1A1A1FCFCFCFCFCFCFFFFFFFDFDFD90C1DC7CB5D6
+            FDFAF7FAF3EBF9F1E8F9F1E8F9F1E9F9F2E9FAF4EEFDFBF970A3CC83ADD1FFFF
+            FFFFFFFFFFFFFFFFFFFFC0C0C0BDBDBDFDFDFDF1F1F1EEEEEEF2F2F2F2F2F2EF
+            EFEFFDFDFDF8F8F8A7A7A7B6B6B6FFFFFFFFFFFFFFFFFFFFFFFFDCECF46FAFD3
+            A8CFE4FDFAF7FBF5EFF9F2EAF9F2EAFBF6F0FDFBF8A3C5DF629AC8D8E5F1FFFF
+            FFFFFFFFFFFFFFFFFFFFEEEEEEB0B0B0CACACAFBFBFBFBFBFBE9E9E9EFEFEFF5
+            F5F5F3F3F3C5C5C5A8A8A8E1E1E1FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFBEDCEB
+            6FAFD37CB6D7AED1E6E4EFF6E4EFF6ACCDE476ADD166A0CBB9D3E6FFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFDADADAB6B6B6C0C0C0CECECEEFEFEFF0F0F0D4
+            D4D4B7B7B7A8A8A8D0D0D0FFFFFFFFFFFFF7F7F7FFFFFFFFFFFFFFFFFFFFFFFF
+            DCECF490C2DD6CADD164A8CE62A6CD69A7CF8BBAD9DAE8F2FFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFEFEFEFFFFFFE5E5E5C2C2C2AEAEAEB0B0B0A8A8A8AA
+            AAAABABABAF0F0F0FEFEFEFEFEFEFDFDFDFFFFFFFFFFFFFEFEFE}
+          NumGlyphs = 2
+          OnClick = btnPesqCombustivelClick
+        end
+        object Label5: TLabel
+          Left = 204
+          Top = 19
+          Width = 58
+          Height = 13
+          Caption = 'Combustivel'
+        end
+        object Label9: TLabel
+          Left = 11
+          Top = 19
+          Width = 36
+          Height = 13
+          Caption = 'Tanque'
+        end
+        object btnPesqTanque: TSpeedButton
+          Left = 70
+          Top = 35
+          Width = 28
+          Height = 24
+          Glyph.Data = {
+            36060000424D3606000000000000360000002800000020000000100000000100
+            1800000000000006000000000000000000000000000000000000FFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1F4F993A8
+            CBF9FAFCFFFFFFFFFFFFFFFFFFFEFEFEFFFFFFFFFFFFFDFDFDFEFEFEFFFFFFFE
+            FEFEFFFFFFFEFEFEFDFDFDFFFFFFA7A7A7FBFBFBFFFFFFFBFBFBFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB6C6E0325BA4477F
+            B84A72B2EFF2F8FFFFFFFAFAFAFFFFFFFDFDFDFEFEFEFFFFFFFFFFFFF4F4F4FF
+            FFFFFDFDFDFFFFFFCDCDCD656565919191808080F2F2F2FFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB7C8E15083BB7CB4D67EB4
+            D55590C24471B0F5F7FBFFFFFFFFFFFFFFFFFFFEFEFEFBFBFBFFFFFFFCFCFCFF
+            FFFFFAFAFAD3D3D3909090B5B5B5BBBBBB999999808080F6F6F6FFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB8CAE2578DC08EC4DE9FD2E692C6
+            DF609AC8456097F7F9FBFFFFFFF8F8F8FFFFFFFFFFFFFFFFFFF7F7F7FFFFFFFF
+            FFFFD5D5D5909090C1C1C1D6D6D6C1C1C1A6A6A6696969FBFBFBFFFFFFFFFFFF
+            D8E4F082ABD0598FC04C86BD4B84BC5185BA4B80BA86BEDAA2D4E7A4D6E87FBA
+            D93E64ABEDF1F7FFFFFFFCFCFCFFFFFFDCDCDCB1B1B198989894949491919189
+            8989898989C3C3C3D3D3D3D8D8D8C0C0C0707070F3F3F3FFFFFFFFFFFFB8D1E6
+            6099C76EA0CAA6C3DEE2EBF4E2EAF4A4BEDC528CC078B3D598CBE28CC3DD4E82
+            BBEDF1F7FFFFFFFFFFFFFDFDFDD6D6D6A5A5A5B0B0B0C3C3C3EFEFEFE9E9E9CA
+            CACA929292B2B2B2CDCDCDC9C9C9878787F5F5F5FBFBFBFBFBFBD9E7F2649EC9
+            A2C4DEFDFBF9FCF7F3FBF5EEFBF5EFFCF8F3FEFCFA5793C36EAAD13F72BDBBCC
+            E3FFFFFFFFFFFFFFFFFFE5E5E5A6A6A6C3C3C3F6F6F6F6F6F6F3F3F3F3F3F3F6
+            F6F6FFFFFF9C9C9CB1B1B1818181D1D1D1FFFFFFFFFFFFFFFFFF8AB8D775A9D0
+            FDFBF9FBF5EEFAF3ECFAF3ECFAF4ECFAF4EDFBF6F0FEFCFA4E84BA6A95C5FFFF
+            FFFFFFFFFFFFFFFFFFFFBCBCBCB1B1B1FFFFFFF3F3F3F7F7F7F0F0F0F2F2F2F4
+            F4F4F5F5F5FBFBFB8D8D8DA1A1A1FFFFFFFFFFFFFCFCFCFFFFFF67A6CCABCCE3
+            FBF7F1FAF2EAFAF3EBFAF3EBFAF3ECFAF3ECFAF4EDFCF8F3A4BEDC5588BDFFFF
+            FFFFFFFFFFFFFFFFFFFFA9A9A9D1D1D1F6F6F6F2F2F2F2F2F2F0F0F0F2F2F2F1
+            F1F1FAFAFAF5F5F5C1C1C1949494FCFCFCFEFEFEFFFFFFFEFEFE61A5CCE4EFF6
+            FAF3EBF9F2EAF9F2EAFAF2EAFAF3EBFAF3EBFAF3ECFBF5EEE2EBF44C86BDFFFF
+            FFFFFFFFFFFFFFFFFFFFAAAAAAF0F0F0EDEDEDF1F1F1EDEDEDF1F1F1F6F6F6F3
+            F3F3E7E7E7F8F8F8F1F1F1929292FFFFFFFEFEFEFDFDFDFFFFFF62A7CEE4EFF6
+            FAF2EAF9F1E9F9F2E9F9F2EAF9F2EAFAF3EBFAF3EBFAF4EEE2EBF44F8ABEFFFF
+            FFFFFFFFFFFFFFFFFFFFA7A7A7F5F5F5F2F2F2F2F2F2F0F0F0EEEEEEEFEFEFEE
+            EEEEF6F6F6F5F5F5EBEBEB8F8F8FFFFFFFFFFFFFFFFFFFFCFCFC6CACD1AED0E6
+            FBF5EFF9F1E8F9F1E8F9F1E9F9F2E9F9F2EAFAF3EBFCF7F2A7C4DE5A91C2FFFF
+            FFFFFFFFFFFFFFFFFFFFB3B3B3D1D1D1F4F4F4E8E8E8F1F1F1F0F0F0EBEBEBF2
+            F2F2F0F0F0F4F4F4C2C2C2A1A1A1FCFCFCFCFCFCFFFFFFFDFDFD90C1DC7CB5D6
+            FDFAF7FAF3EBF9F1E8F9F1E8F9F1E9F9F2E9FAF4EEFDFBF970A3CC83ADD1FFFF
+            FFFFFFFFFFFFFFFFFFFFC0C0C0BDBDBDFDFDFDF1F1F1EEEEEEF2F2F2F2F2F2EF
+            EFEFFDFDFDF8F8F8A7A7A7B6B6B6FFFFFFFFFFFFFFFFFFFFFFFFDCECF46FAFD3
+            A8CFE4FDFAF7FBF5EFF9F2EAF9F2EAFBF6F0FDFBF8A3C5DF629AC8D8E5F1FFFF
+            FFFFFFFFFFFFFFFFFFFFEEEEEEB0B0B0CACACAFBFBFBFBFBFBE9E9E9EFEFEFF5
+            F5F5F3F3F3C5C5C5A8A8A8E1E1E1FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFBEDCEB
+            6FAFD37CB6D7AED1E6E4EFF6E4EFF6ACCDE476ADD166A0CBB9D3E6FFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFDADADAB6B6B6C0C0C0CECECEEFEFEFF0F0F0D4
+            D4D4B7B7B7A8A8A8D0D0D0FFFFFFFFFFFFF7F7F7FFFFFFFFFFFFFFFFFFFFFFFF
+            DCECF490C2DD6CADD164A8CE62A6CD69A7CF8BBAD9DAE8F2FFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFEFEFEFFFFFFE5E5E5C2C2C2AEAEAEB0B0B0A8A8A8AA
+            AAAABABABAF0F0F0FEFEFEFEFEFEFDFDFDFFFFFFFFFFFFFEFEFE}
+          NumGlyphs = 2
+          OnClick = btnPesqTanqueClick
+        end
+        object edtDescCombustivel: TEdit
+          Left = 291
+          Top = 36
+          Width = 261
+          Height = 21
+          BevelKind = bkFlat
+          BorderStyle = bsNone
+          CharCase = ecUpperCase
+          Enabled = False
+          ReadOnly = True
+          TabOrder = 2
+        end
+        object edtCodBomba: TDBEdit
+          Left = 107
+          Top = 35
+          Width = 57
+          Height = 24
+          DataField = 'COD_BOMBA'
+          DataSource = dsCadastro
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 1
+        end
+        object edtCodCombustivel: TDBEdit
+          Left = 204
+          Top = 35
+          Width = 54
+          Height = 24
+          DataField = 'COD_COMBUSTIVEL'
+          DataSource = dsCadastro
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 3
+        end
+        object edtCodTanque: TDBEdit
+          Left = 10
+          Top = 35
+          Width = 57
+          Height = 24
+          DataField = 'COD_TANQUE'
+          DataSource = dsCadastro
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 0
+        end
+      end
+      object boxVenda: TGroupBox
+        Left = 0
+        Top = 145
+        Width = 569
+        Height = 80
+        Align = alTop
+        Caption = 'Venda'
+        TabOrder = 2
+        object lblPrecoLitro: TLabel
+          Left = 121
+          Top = 21
+          Width = 37
+          Height = 13
+          Caption = 'R$ Litro'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ParentFont = False
+        end
+        object lblQtdeLitro: TLabel
+          Left = 11
+          Top = 21
+          Width = 52
+          Height = 13
+          Caption = 'Qtde. Litro'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ParentFont = False
+        end
+        object lblTotalVenda: TLabel
+          Left = 450
+          Top = 21
+          Width = 73
+          Height = 13
+          Caption = 'R$ Total Venda'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ParentFont = False
+        end
+        object lblImposto: TLabel
+          Left = 229
+          Top = 21
+          Width = 36
+          Height = 13
+          Caption = '% Imp.'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ParentFont = False
+        end
+        object lblValImposto: TLabel
+          Left = 339
+          Top = 21
+          Width = 55
+          Height = 13
+          Caption = 'R$ Imposto'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ParentFont = False
+        end
+        object edtPrecoLitro: TDBEdit
+          Left = 121
+          Top = 37
+          Width = 105
+          Height = 24
+          DataField = 'PRC_LITRO'
+          DataSource = dsCadastro
+          Enabled = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 1
+        end
+        object edtTotalVenda: TMaskEdit
+          Left = 447
+          Top = 37
+          Width = 105
+          Height = 24
+          BiDiMode = bdRightToLeft
+          Color = clTeal
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWhite
+          Font.Height = -13
+          Font.Name = 'MS Sans Serif'
+          Font.Style = [fsBold]
+          ParentBiDiMode = False
+          ParentFont = False
+          ReadOnly = True
+          TabOrder = 4
+          Text = ''
+        end
+        object edtQtdeLitro: TEdit
+          Left = 11
+          Top = 37
+          Width = 105
+          Height = 24
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 0
+          OnExit = edtQtdeLitroExit
+        end
+        object edtImposto: TDBEdit
+          Left = 229
+          Top = 37
+          Width = 105
+          Height = 24
+          DataField = 'IMPOSTO'
+          DataSource = dsCadastro
+          Enabled = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 2
+        end
+        object edtValImpopsto: TDBEdit
+          Left = 339
+          Top = 37
+          Width = 105
+          Height = 24
+          DataField = 'VAL_IMPOSTO'
+          DataSource = dsCadastro
+          Enabled = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 3
+        end
+      end
+      object boxDados: TGroupBox
+        Left = 0
+        Top = 0
+        Width = 569
+        Height = 73
+        Align = alTop
+        Caption = 'Dados'
+        TabOrder = 0
+        object lblCodigo: TLabel
+          Left = 11
+          Top = 22
+          Width = 33
+          Height = 13
+          Caption = 'C'#243'digo'
+        end
+        object lblDataMovimento: TLabel
+          Left = 107
+          Top = 22
+          Width = 78
+          Height = 13
+          Caption = 'Data Movimento'
+        end
+        object btnPesqFrentista: TSpeedButton
+          Left = 259
+          Top = 38
+          Width = 28
+          Height = 23
+          Glyph.Data = {
+            36060000424D3606000000000000360000002800000020000000100000000100
+            1800000000000006000000000000000000000000000000000000FFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1F4F993A8
+            CBF9FAFCFFFFFFFFFFFFFFFFFFFEFEFEFFFFFFFFFFFFFDFDFDFEFEFEFFFFFFFE
+            FEFEFFFFFFFEFEFEFDFDFDFFFFFFA7A7A7FBFBFBFFFFFFFBFBFBFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB6C6E0325BA4477F
+            B84A72B2EFF2F8FFFFFFFAFAFAFFFFFFFDFDFDFEFEFEFFFFFFFFFFFFF4F4F4FF
+            FFFFFDFDFDFFFFFFCDCDCD656565919191808080F2F2F2FFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB7C8E15083BB7CB4D67EB4
+            D55590C24471B0F5F7FBFFFFFFFFFFFFFFFFFFFEFEFEFBFBFBFFFFFFFCFCFCFF
+            FFFFFAFAFAD3D3D3909090B5B5B5BBBBBB999999808080F6F6F6FFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB8CAE2578DC08EC4DE9FD2E692C6
+            DF609AC8456097F7F9FBFFFFFFF8F8F8FFFFFFFFFFFFFFFFFFF7F7F7FFFFFFFF
+            FFFFD5D5D5909090C1C1C1D6D6D6C1C1C1A6A6A6696969FBFBFBFFFFFFFFFFFF
+            D8E4F082ABD0598FC04C86BD4B84BC5185BA4B80BA86BEDAA2D4E7A4D6E87FBA
+            D93E64ABEDF1F7FFFFFFFCFCFCFFFFFFDCDCDCB1B1B198989894949491919189
+            8989898989C3C3C3D3D3D3D8D8D8C0C0C0707070F3F3F3FFFFFFFFFFFFB8D1E6
+            6099C76EA0CAA6C3DEE2EBF4E2EAF4A4BEDC528CC078B3D598CBE28CC3DD4E82
+            BBEDF1F7FFFFFFFFFFFFFDFDFDD6D6D6A5A5A5B0B0B0C3C3C3EFEFEFE9E9E9CA
+            CACA929292B2B2B2CDCDCDC9C9C9878787F5F5F5FBFBFBFBFBFBD9E7F2649EC9
+            A2C4DEFDFBF9FCF7F3FBF5EEFBF5EFFCF8F3FEFCFA5793C36EAAD13F72BDBBCC
+            E3FFFFFFFFFFFFFFFFFFE5E5E5A6A6A6C3C3C3F6F6F6F6F6F6F3F3F3F3F3F3F6
+            F6F6FFFFFF9C9C9CB1B1B1818181D1D1D1FFFFFFFFFFFFFFFFFF8AB8D775A9D0
+            FDFBF9FBF5EEFAF3ECFAF3ECFAF4ECFAF4EDFBF6F0FEFCFA4E84BA6A95C5FFFF
+            FFFFFFFFFFFFFFFFFFFFBCBCBCB1B1B1FFFFFFF3F3F3F7F7F7F0F0F0F2F2F2F4
+            F4F4F5F5F5FBFBFB8D8D8DA1A1A1FFFFFFFFFFFFFCFCFCFFFFFF67A6CCABCCE3
+            FBF7F1FAF2EAFAF3EBFAF3EBFAF3ECFAF3ECFAF4EDFCF8F3A4BEDC5588BDFFFF
+            FFFFFFFFFFFFFFFFFFFFA9A9A9D1D1D1F6F6F6F2F2F2F2F2F2F0F0F0F2F2F2F1
+            F1F1FAFAFAF5F5F5C1C1C1949494FCFCFCFEFEFEFFFFFFFEFEFE61A5CCE4EFF6
+            FAF3EBF9F2EAF9F2EAFAF2EAFAF3EBFAF3EBFAF3ECFBF5EEE2EBF44C86BDFFFF
+            FFFFFFFFFFFFFFFFFFFFAAAAAAF0F0F0EDEDEDF1F1F1EDEDEDF1F1F1F6F6F6F3
+            F3F3E7E7E7F8F8F8F1F1F1929292FFFFFFFEFEFEFDFDFDFFFFFF62A7CEE4EFF6
+            FAF2EAF9F1E9F9F2E9F9F2EAF9F2EAFAF3EBFAF3EBFAF4EEE2EBF44F8ABEFFFF
+            FFFFFFFFFFFFFFFFFFFFA7A7A7F5F5F5F2F2F2F2F2F2F0F0F0EEEEEEEFEFEFEE
+            EEEEF6F6F6F5F5F5EBEBEB8F8F8FFFFFFFFFFFFFFFFFFFFCFCFC6CACD1AED0E6
+            FBF5EFF9F1E8F9F1E8F9F1E9F9F2E9F9F2EAFAF3EBFCF7F2A7C4DE5A91C2FFFF
+            FFFFFFFFFFFFFFFFFFFFB3B3B3D1D1D1F4F4F4E8E8E8F1F1F1F0F0F0EBEBEBF2
+            F2F2F0F0F0F4F4F4C2C2C2A1A1A1FCFCFCFCFCFCFFFFFFFDFDFD90C1DC7CB5D6
+            FDFAF7FAF3EBF9F1E8F9F1E8F9F1E9F9F2E9FAF4EEFDFBF970A3CC83ADD1FFFF
+            FFFFFFFFFFFFFFFFFFFFC0C0C0BDBDBDFDFDFDF1F1F1EEEEEEF2F2F2F2F2F2EF
+            EFEFFDFDFDF8F8F8A7A7A7B6B6B6FFFFFFFFFFFFFFFFFFFFFFFFDCECF46FAFD3
+            A8CFE4FDFAF7FBF5EFF9F2EAF9F2EAFBF6F0FDFBF8A3C5DF629AC8D8E5F1FFFF
+            FFFFFFFFFFFFFFFFFFFFEEEEEEB0B0B0CACACAFBFBFBFBFBFBE9E9E9EFEFEFF5
+            F5F5F3F3F3C5C5C5A8A8A8E1E1E1FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFBEDCEB
+            6FAFD37CB6D7AED1E6E4EFF6E4EFF6ACCDE476ADD166A0CBB9D3E6FFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFDADADAB6B6B6C0C0C0CECECEEFEFEFF0F0F0D4
+            D4D4B7B7B7A8A8A8D0D0D0FFFFFFFFFFFFF7F7F7FFFFFFFFFFFFFFFFFFFFFFFF
+            DCECF490C2DD6CADD164A8CE62A6CD69A7CF8BBAD9DAE8F2FFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFEFEFEFFFFFFE5E5E5C2C2C2AEAEAEB0B0B0A8A8A8AA
+            AAAABABABAF0F0F0FEFEFEFEFEFEFDFDFDFFFFFFFFFFFFFEFEFE}
+          NumGlyphs = 2
+          OnClick = btnPesqFrentistaClick
+        end
+        object Label4: TLabel
+          Left = 204
+          Top = 22
+          Width = 43
+          Height = 13
+          Caption = 'Frentista'
+        end
+        object edtCodigo: TDBEdit
+          Left = 11
+          Top = 39
+          Width = 87
+          Height = 21
+          DataField = 'COD_MOVIMENTO'
+          DataSource = dsCadastro
+          Enabled = False
+          TabOrder = 1
+        end
+        object edtDataMovimento: TDBEdit
+          Left = 107
+          Top = 39
+          Width = 87
+          Height = 21
+          Enabled = False
+          ReadOnly = True
+          TabOrder = 2
+        end
+        object edtDescFrentista: TEdit
+          Left = 291
+          Top = 39
+          Width = 261
+          Height = 21
+          BevelKind = bkFlat
+          BorderStyle = bsNone
+          CharCase = ecUpperCase
+          Enabled = False
+          ReadOnly = True
+          TabOrder = 3
+        end
+        object edtCodFrentista: TEdit
+          Left = 204
+          Top = 39
+          Width = 54
+          Height = 21
+          TabOrder = 0
+        end
+      end
+    end
+  end
+  inherited pnlRodape: TPanel
+    Top = 339
+    Width = 577
+    ExplicitTop = 339
+    ExplicitWidth = 577
+    inherited btnSair: TBitBtn
+      Left = 494
+      ExplicitLeft = 494
+    end
+  end
+  inherited fdQryCadastro: TFDQuery
+    BeforePost = fdQryCadastroBeforePost
+    UpdateOptions.AssignedValues = [uvFetchGeneratorsPoint, uvGeneratorName]
+    UpdateOptions.FetchGeneratorsPoint = gpImmediate
+    UpdateOptions.GeneratorName = 'GEN_VENDA_ID'
+    UpdateOptions.AutoIncFields = 'COD_MOVIMENTO'
+    SQL.Strings = (
+      'select * from venda')
+    Left = 80
+    Top = 254
+    ParamData = <
+      item
+        Name = 'Dat_Exclusao'
+        DataType = ftDateTime
+      end>
+    object fdQryCadastroCOD_MOVIMENTO: TFDAutoIncField
+      FieldName = 'COD_MOVIMENTO'
+      Origin = 'COD_MOVIMENTO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      IdentityInsert = True
+    end
+    object fdQryCadastroDAT_MOVIMENTO: TSQLTimeStampField
+      FieldName = 'DAT_MOVIMENTO'
+      Origin = 'DAT_MOVIMENTO'
+    end
+    object fdQryCadastroCOD_TANQUE: TIntegerField
+      FieldName = 'COD_TANQUE'
+      Origin = 'COD_TANQUE'
+    end
+    object fdQryCadastroCOD_BOMBA: TIntegerField
+      FieldName = 'COD_BOMBA'
+      Origin = 'COD_BOMBA'
+    end
+    object fdQryCadastroCOD_COMBUSTIVEL: TIntegerField
+      FieldName = 'COD_COMBUSTIVEL'
+      Origin = 'COD_COMBUSTIVEL'
+    end
+    object fdQryCadastroQTD_LITRO: TIntegerField
+      FieldName = 'QTD_LITRO'
+      Origin = 'QTD_LITRO'
+    end
+    object fdQryCadastroPRC_LITRO: TBCDField
+      FieldName = 'PRC_LITRO'
+      Origin = 'PRC_LITRO'
+      Precision = 18
+    end
+    object fdQryCadastroVAL_VENDA: TBCDField
+      FieldName = 'VAL_VENDA'
+      Origin = 'VAL_VENDA'
+      Precision = 18
+    end
+    object fdQryCadastroCOD_FRENTISTA: TIntegerField
+      FieldName = 'COD_FRENTISTA'
+      Origin = 'COD_FRENTISTA'
+    end
+    object fdQryCadastroIMPOSTO: TBCDField
+      FieldName = 'IMPOSTO'
+      Origin = 'IMPOSTO'
+      Precision = 18
+    end
+    object fdQryCadastroDAT_EXCLUSAO: TSQLTimeStampField
+      FieldName = 'DAT_EXCLUSAO'
+      Origin = 'DAT_EXCLUSAO'
+    end
+    object fdQryCadastroVAL_IMPOSTO: TBCDField
+      FieldName = 'VAL_IMPOSTO'
+      Origin = 'VAL_IMPOSTO'
+      Precision = 18
+    end
+  end
+  inherited fdTransaction: TFDTransaction
+    Left = 216
+    Top = 256
+  end
+  inherited dsCadastro: TDataSource
+    Left = 272
+    Top = 256
+  end
+  inherited fdQueryAuxiliar: TFDQuery
+    SQL.Strings = (
+      'select * from tanque')
+    Left = 160
+    Top = 255
+    object fdQueryAuxiliarCOD_TANQUE: TIntegerField
+      FieldName = 'COD_TANQUE'
+      Origin = 'COD_TANQUE'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object fdQueryAuxiliarDES_TANQUE: TStringField
+      FieldName = 'DES_TANQUE'
+      Origin = 'DES_TANQUE'
+      Required = True
+    end
+  end
+  object fdQryAux: TFDQuery [6]
+    Connection = DadosDm.fdCon
+    UpdateTransaction = fdTransaction
+    Left = 120
+    Top = 255
+  end
+  object dsQryAux: TDataSource [7]
+    DataSet = fdQryAux
+    Left = 328
+    Top = 257
+  end
+  inherited dsAuxiliar: TDataSource
+    Left = 376
+    Top = 256
+  end
+  inherited fdUpdCadastro: TFDUpdateSQL
+    Left = 24
+    Top = 256
+  end
+end
